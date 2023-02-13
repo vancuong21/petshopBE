@@ -1,0 +1,10 @@
+User : id, username, password, createdAt, lastUpdateAt
+UserRole: id, User, role
+Category:id, name
+Product: id, productCode ,name, image/save url, description, price, Category, createdAt, lastUpdateAt
+Cart: id, Product, quantity, tempTotal, Voucher, total, User  //@PrimaryKeyJoinColumn
+Voucher:id, voucherCode, voucherAmount, voucherDate, createdAt, lastUpdateAt
+
+Bill: id, User, createdAt, total(tong tien hoa don), status // @PrimaryKeyJoinColumn
+BillDetail: id, Bill, Product, quantity, //  @PrimaryKeyJoinColumn
+Ads
