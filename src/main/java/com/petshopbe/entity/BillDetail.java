@@ -24,7 +24,7 @@ public class BillDetail {
     private String phoneNumber;
     private String note;
     @OneToOne
- //   @PrimaryKeyJoinColumn // BillDetail_id === Cart_id
+    //   @PrimaryKeyJoinColumn // BillDetail_id === Cart_id
     private Cart cart;
     @CreatedDate
     private Date createdAt;

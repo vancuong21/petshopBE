@@ -15,7 +15,7 @@ public class Bill {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     @OneToOne
-   // @PrimaryKeyJoinColumn // Bill_id === BillDetail_id
+    // @PrimaryKeyJoinColumn // Bill_id === BillDetail_id
     private BillDetail billDetail; // total, createdAt
     private String status; // thanh toan, chua thanh toan
 }
