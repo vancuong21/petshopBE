@@ -19,9 +19,9 @@ public class Voucher {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private String voucherCode;
+    private String voucherCode; // ma voucher
     private double voucherAmount; // so tien giam
-    private Date voucherDate;
+    private Date voucherDate; // ngay het han
     @CreatedDate
     @Column(updatable = false)
     private Date createdAt;

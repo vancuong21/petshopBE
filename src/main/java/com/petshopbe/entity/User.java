@@ -9,6 +9,7 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Data
@@ -27,4 +28,7 @@ public class User {
     private Date createdAt;
     @LastModifiedDate
     private Date lastUpdateAt;
+
+    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
+    private List<UserRole> userRoles;
 }
